@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>4th CANVAS ART전 아트작가클래스 | AI 아트 마스터 클래스</title>
+    <meta name="description" content="김진수소장과 함께하는 AI 아트작가클래스. 미드저니를 활용한 감성 아트 제작부터 갤러리 전시 참여까지. 《쉼의 온도》 전시 참여 작가 특별 클래스.">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Notifications Area -->
+    <div id="notifications" role="region" aria-label="Notifications" tabindex="-1" style="pointer-events: none;">
+        <ol tabindex="-1" class="notification-list"></ol>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Hero Title -->
+                <h1 class="hero-title">Welcome to Korean AI Art Class</h1>
+                
+                <!-- Hero Description -->
+                <p class="hero-description">
+                    Discover the beauty of Korean art through AI-powered learning. Join our vibrant community and unleash your creative potential.
+                </p>
+                
+                <!-- CTA Button -->
+                <div class="cta-section">
+                    <button class="cta-button" data-testid="button-login">
+                        Sign In to Get Started
+                    </button>
+                </div>
+                
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">AI-Powered Learning</h3>
+                        <p class="feature-description">Experience personalized art instruction powered by advanced AI technology</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🇰🇷</div>
+                        <h3 class="feature-title">Korean Art Tradition</h3>
+                        <p class="feature-description">Explore the rich heritage of Korean artistic traditions and techniques</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="feature-title">Vibrant Community</h3>
+                        <p class="feature-description">Connect with fellow artists and share your creative journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Simple interactivity
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('환영합니다! AI 아트 클래스에 오신 것을 환영합니다.');
+        });
+        
+        // Add hover effects for feature cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
